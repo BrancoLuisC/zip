@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Complementar</title>
+
+  <style>
+    /* CORES PRINCIPAIS — podem ser alteradas facilmente aqui */
+    :root {
+      --fundo: #f4f6f8;
+      --cartao: #ffffff;
+      --texto: #222222;
+      --texto-secundario: #666666;
+      --destaque: #1f4e79;
+      --borda: #d9dee5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--fundo);
+      color: var(--texto);
+    }
+
+    .pagina {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+
+    header {
+      margin-bottom: 42px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .linha {
+      width: 70px;
+      height: 3px;
+      margin-top: 16px;
+      background-color: var(--destaque);
+    }
+
+    .blocos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .bloco {
+      background-color: var(--cartao);
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    h2 {
+      margin: 0 0 12px 0;
+      font-size: 22px;
+    }
+
+    p {
+      margin: 0 0 26px 0;
+      color: var(--texto-secundario);
+      line-height: 1.6;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 1px solid var(--destaque);
+      border-radius: 6px;
+      color: var(--destaque);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .botao:hover,
+    .botao:focus {
+      background-color: var(--destaque);
+      color: #ffffff;
+    }
+
+    @media (max-width: 700px) {
+      .blocos {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .pagina {
+        padding-top: 45px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="pagina">
+
+    <!-- TÍTULO -->
+    <header>
+      <h1>MATERIAL COMPLEMENTAR</h1>
+      <div class="linha"></div>
+    </header>
+
+    <section class="blocos">
+
+      <!-- SCRIPTS E DICIONÁRIOS -->
+      <article class="bloco">
+        <h2>Scripts e dicionários</h2>
+        <p>Código e ficheiros auxiliares utilizados na metodologia.</p>
+        <a class="botao" href="scripts.html">Consultar</a>
+      </article>
+
+      <!-- ANEXOS -->
+      <article class="bloco">
+        <h2>Anexos</h2>
+        <p>Relatório auxiliar gerado e outros elementos associados ao caso piloto.</p>
+        <a class="botao" href="anexos.html">Consultar</a>
+      </article>
+
+    </section>
+  </main>
+</body>
+</html>

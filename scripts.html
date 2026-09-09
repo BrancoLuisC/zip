@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scripts e dicionários</title>
+
+  <style>
+    :root {
+      --fundo: #f4f6f8;
+      --cartao: #ffffff;
+      --texto: #222222;
+      --texto-secundario: #666666;
+      --destaque: #1f4e79;
+      --borda: #d9dee5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--fundo);
+      color: var(--texto);
+    }
+
+    .pagina {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+
+    header {
+      margin-bottom: 42px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .linha {
+      width: 70px;
+      height: 3px;
+      margin-top: 16px;
+      background-color: var(--destaque);
+    }
+
+    .bloco {
+      background-color: var(--cartao);
+      border: 1px solid var(--borda);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      margin: 0 0 12px 0;
+      font-size: 22px;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+      color: var(--texto-secundario);
+      line-height: 1.6;
+    }
+
+    .ficheiro {
+      margin-bottom: 26px;
+    }
+
+    .ficheiro:last-child {
+      margin-bottom: 0;
+    }
+
+    .nome-ficheiro {
+      margin: 4px 0 12px 0;
+      font-size: 14px;
+      color: var(--texto-secundario);
+      word-break: break-word;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 10px 18px;
+      border: 1px solid var(--destaque);
+      border-radius: 6px;
+      color: var(--destaque);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .botao:hover,
+    .botao:focus {
+      background-color: var(--destaque);
+      color: #ffffff;
+    }
+
+    .voltar {
+      display: inline-block;
+      margin-top: 8px;
+      color: var(--destaque);
+      text-decoration: none;
+    }
+
+    .voltar:hover,
+    .voltar:focus {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      .pagina {
+        padding-top: 45px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <main class="pagina">
+
+    <!-- TÍTULO -->
+    <header>
+      <h1>Scripts e dicionários</h1>
+      <div class="linha"></div>
+    </header>
+
+    <!-- CONTEÚDO -->
+    <section class="bloco">
+      <h2>Ficheiros da metodologia</h2>
+      <p>Conjunto de scripts e ficheiros auxiliares utilizados na metodologia.</p>
+
+      <div class="ficheiro">
+        <p class="nome-ficheiro">scripts.zip</p>
+        <a class="botao" href="scripts.zip" download>Descarregar</a>
+      </div>
+    </section>
+
+    <!-- REGRESSO AO ÍNDICE -->
+    <a class="voltar" href="index.html">← Voltar ao início</a>
+
+  </main>
+</body>
+</html>
